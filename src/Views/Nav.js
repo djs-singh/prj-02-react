@@ -7,7 +7,7 @@ function N(){
     let siteName = " काफिर मन "
     return (
         <Navbar collapseOnSelect expand="sm" variant="dark" className = "bg-custom" sticky="top">
-            <Navbar.Brand href="home" className = "custom-nav-brand">{siteName}</Navbar.Brand>
+            <Navbar.Brand href="/home" className = "custom-nav-brand">{siteName}</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav>

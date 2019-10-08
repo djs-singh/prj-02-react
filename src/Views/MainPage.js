@@ -16,18 +16,16 @@ function MP(){
             <Row className = "main-page">
                 <Col className = "justify-content-md-center">
                     <Link to='/poems'>
-                    {/* <Button variant= "primary"> */}
-                    <Button variant="light" className = "custom-sec-color" >
-                        <FontAwesomeIcon icon = {faSnowflake} size = "5x"/> <br/> Poems
-                    </Button>
+                        <Button variant="light" className = "custom-sec-color" >
+                            <FontAwesomeIcon icon = {faSnowflake} size = "5x"/> <br/> Poems
+                        </Button>
                     </Link>
                 </Col>
                 <Col>
                     <Link to='/stories'>
-                    {/* <Button variant= "primary"> */}
-                    <Button variant="light" className = "custom-sec-color">
-                        <FontAwesomeIcon icon = {faSun} size = "5x"/>  <br/> Stories
-                    </Button>
+                        <Button variant="light" className = "custom-sec-color">
+                            <FontAwesomeIcon icon = {faSun} size = "5x"/>  <br/> Stories
+                        </Button>
                     </Link>
                 </Col>
             </Row>

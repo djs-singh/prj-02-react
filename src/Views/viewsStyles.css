@@ -1,5 +1,9 @@
  :root{
     --custom-font : 'Kalam', cursive;
+    --primary-color : #ff007f;
+    --nav-color : #210024;
+    --text-color : white
+
  }
 
  body{
@@ -16,16 +20,16 @@
  
  /* For NavBar Color */
 .bg-custom {
-    background-color: #210024;  
+    background-color:  var(--nav-color)
 }
 
 .custom-sec-color{
-    background-color:#ff007f;
-    color:white;
+    background-color: var(--primary-color);
+    color : var(--text-color);
 }
 .custom-sec-color:hover{
-    background-color:#210024;
-    color:white;
+    background-color: var(--nav-color);
+    color:var(--text-color);
 }
 
 @media only screen and (max-width: 576px){
@@ -53,13 +57,13 @@
 /* For Cards */
 
 .card-common-style{
-    margin : 20px 20px 20px 20px;
+    margin : 5% 7% 5% 7%;
     opacity : 0;
-    background-color:#ff007f;/* rgb(45, 43, 85);*/
-    color:white;
+    background-color:var(--primary-color);/* rgb(45, 43, 85);*/
+    color:var(--text-color);
     font-family: var(--custom-font);
     font-size:20px;
-    width:70%
+    width:85% !important;
 }
 .card-styles1 {
     height : 212px;
@@ -146,4 +150,15 @@
 /* For Modals */
 .modal-font{
     font-family: var(--custom-font);
+}
+
+/*MainCardStyle*/
+
+.show-card-style{
+    margin : 5% 10% 10% 10%;
+    background-color: var(--primary-color);
+    color:var(--text-color);
+    font-family: var(--custom-font);
+    font-size:20px;
+    width:100% !important;
 }
