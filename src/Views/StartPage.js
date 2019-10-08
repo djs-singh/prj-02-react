@@ -1,8 +1,9 @@
-import React, {useState} from 'react';
+import React from 'react';
 import N from './Nav';
 import CountCards from './Cards'
 import {Route , Switch} from 'react-router-dom'
 import MP from './MainPage'
+import SF from './ShowFullItem'
 
 function St(){
 
@@ -10,10 +11,10 @@ function St(){
         <div>
             <N/> 
             <Switch>
-                <Route path= "/" exact component = {MP}></Route>
-                <Route path= "/home" component = {MP}></Route>
-                <Route path= "/poems" exact component = {CountCards}></Route>
-                {/* <Route path= "/poems" component= {MP} </Route> */}
+                <Route path= "/" exact component = {MP}/>
+                <Route path= "/home" component = {MP}/>
+                <Route path= "/poems" exact component = {CountCards}/>
+                <Route path= '/poems/:id' component= {SF}/>
             </Switch>
         </div>
     )

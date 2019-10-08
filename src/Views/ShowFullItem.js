@@ -18,3 +18,6 @@ function SF(props){
         </Row>
     )
 }
+
+
+export default SF;
