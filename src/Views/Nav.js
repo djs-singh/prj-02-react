@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons'
 
 function N(){
-    let siteName = " काफिर मन "
+    let siteName = " कोरा कागज "
     return (
         <Navbar collapseOnSelect expand="sm" variant="dark" className = "bg-custom" sticky="top">
             <Navbar.Brand href="/home" className = "custom-nav-brand">{siteName}</Navbar.Brand>

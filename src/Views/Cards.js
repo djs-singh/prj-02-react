@@ -17,9 +17,8 @@ function C(props){
     setTimeout(()=>{setVisible(true)},50*props.number);
     
     function onCard(){
-        console.log(link);
+        // console.log(link);
         setClicked(true);
-       return (<Redirect push to = {link} />);
     }
   
     return(
@@ -56,7 +55,7 @@ function CountCards(){
     // for(let i=0;i<n;i++){poems.push("Poem"+(i+1))}
     let x = Math.floor(Math.random() * 10);
     for(let i=0; i<n; i++){
-        let a = { id: i, title: ("Poem "+(i+1)), preview: "RRRR "+i+" AAAAA"};
+        let a = { id: i+1, title: ("Poem "+(i+1)), preview: "RRRR "+i+" AAAAA"};
         poems.push(a);
     }
 
