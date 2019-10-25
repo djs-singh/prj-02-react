@@ -11,6 +11,15 @@ function AP(){
             obj[value] = $('#'+value).val();
         })
         console.log({"O":obj});
+        fetch('http://localhost:4000/poems/add', {
+            method: 'post',
+            body: JSON.stringify(obj)
+            }
+        )
+        .then(res => { 
+            return res.json();
+            })
+        .then((res)=>{console.log(JSON.stringify(res));})
     }
 
     return (

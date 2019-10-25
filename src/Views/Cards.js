@@ -59,6 +59,20 @@ function CountCards(){
         poems.push(a);
     }
 
+    fetch('http://localhost:4000/get', {
+            method: 'GET',
+            mode: 'no-cors',
+            headers: {
+                "access-control-allow-origin":"*"
+            },
+        }
+    )
+    .then(res => { 
+        return res.json();
+    })
+    .then((res)=>{console.log(JSON.stringify(res));})
+    .catch(err => console.log(err.message));
+
     return(
         <CardColumns className = "custom-count">
             <TransitionGroup>
