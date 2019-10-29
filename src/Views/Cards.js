@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {Card, CardColumns, Alert, OverlayTrigger} from 'react-bootstrap';
 import {CSSTransition, TransitionGroup} from 'react-transition-group'
 import {Redirect} from 'react-router-dom';
+import $ from 'jquery';
 
 
 function C(props){
@@ -50,39 +51,38 @@ function C(props){
 
 
 function CountCards(){
-    var poems = [];
-    let n = 10;
-    // for(let i=0;i<n;i++){poems.push("Poem"+(i+1))}
+    // var poems = [];
     let x = Math.floor(Math.random() * 10);
-    for(let i=0; i<n; i++){
-        let a = { id: i+1, title: ("Poem "+(i+1)), preview: "RRRR "+i+" AAAAA"};
-        poems.push(a);
-    }
 
-    fetch('http://localhost:4000/get', {
+    useEffect(()=>{
+        fetchItems();
+    },[]);
+
+    const [poems, setPoems] = useState([]);
+
+    var fetchItems = async ()=>{
+        $('#loading-spinner').removeClass('hide');
+        var data = await fetch('http://localhost:4000/a/b', {
             method: 'GET',
-            mode: 'no-cors',
-            headers: {
-                "access-control-allow-origin":"*"
-            },
-        }
-    )
-    .then(res => { 
-        return res.json();
-    })
-    .then((res)=>{console.log(JSON.stringify(res));})
-    .catch(err => console.log(err.message));
-
+        })
+        .then(res => { 
+            return res.json();
+        })
+        .catch(err => console.log(err.message)); 
+        $('#loading-spinner').addClass('hide');
+        setPoems(data);
+    }
+    
     return(
-        <CardColumns className = "custom-count">
-            <TransitionGroup>
-                {
-                    poems.map((value,index)=>{
-                        return (<C poem = {value} number = {index+x} Fp = {false} key = {index}/>)
-                    })   
-                }
-            </TransitionGroup>
-        </CardColumns>
+            <CardColumns className = "custom-count">
+                <TransitionGroup>
+                    {
+                        poems.map((value,index)=>{
+                            return (<C poem = {value} number = {index+x} Fp = {false} key = {index}/>)
+                        })   
+                    }
+                </TransitionGroup>
+            </CardColumns>
     )
 }
 

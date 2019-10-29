@@ -4,22 +4,27 @@ import $ from 'jquery';
 
 function AP(){
 
-    var onClickButton = (e)=>{
+    var onClickButton = async (e)=>{
         e.preventDefault();
         let obj={};
         (['title','type','preview','data']).map((value,index)=>{
             obj[value] = $('#'+value).val();
         })
         console.log({"O":obj});
-        fetch('http://localhost:4000/poems/add', {
-            method: 'post',
+        var res = await fetch('http://localhost:4000/a/c', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+              },
             body: JSON.stringify(obj)
             }
         )
         .then(res => { 
             return res.json();
-            })
-        .then((res)=>{console.log(JSON.stringify(res));})
+        })
+        .catch((err)=> console.log(err));
+        console.log(res);
     }
 
     return (

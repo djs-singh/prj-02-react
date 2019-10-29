@@ -54,6 +54,20 @@
 .main-page .col{
     text-align: center;
 }
+
+ /* Loading Icon Style */
+
+.spinner-style{
+    text-align: center;
+    padding-top: 10%;
+    width: 90%;
+    position: absolute;
+}
+
+.hide{
+    display: none;
+}
+
 /* For Cards */
 
 .card-common-style{
@@ -120,7 +134,7 @@
     opacity: 0;
 }
 */
- .readMore{
+.readMore{
     width : 150px;
     text-align : center;
     margin-top:-50px;
