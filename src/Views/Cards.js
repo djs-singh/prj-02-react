@@ -18,7 +18,6 @@ function C(props){
     setTimeout(()=>{setVisible(true)},50*props.number);
     
     function onCard(){
-        // console.log(link);
         setClicked(true);
     }
   
@@ -65,7 +64,7 @@ function CountCards(){
         var data = await fetch('http://localhost:4000/a/b', {
             method: 'GET',
         })
-        .then(res => { 
+        .then(res => {
             return res.json();
         })
         .catch(err => console.log(err.message)); 

@@ -7,6 +7,7 @@ import MP from './MainPage';
 import SF from './ShowFullItem';
 import AP from './AdminAdd';
 import Loading from '../LoadingIcon2.svg'
+import About from './About';
 
 function St(){
 
@@ -20,6 +21,7 @@ function St(){
                 <Route path= "/poems" exact component = {CountCards}/>
                 <Route path= '/poems/:id' component= {SF}/>
                 <Route path= '/addAdmin' exact component={AP}/>
+                <Route path= '/about' exact component={About}/>
             </Switch>
         </div>
     )

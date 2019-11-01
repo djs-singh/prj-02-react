@@ -17,6 +17,12 @@
     font-family: var(--custom-font);
     font-size:20px;
 }
+
+.about{
+    font-family: var(--custom-font);
+    font-size:20px;
+    color : var(--text-color);
+}
  
  /* For NavBar Color */
 .bg-custom {
@@ -41,15 +47,22 @@
 .custom-nav-brand{
     width:100%;
     position: relative;
-    text-align : center;
+    /* text-align : center; */
     font-family: var(--custom-font);
     font-weight: bold;
     font-size:30px
 }
 
+#responsive-navbar-nav a{
+    font-family: var(--custom-font);
+    font-size: 20px;
+    margin-left:3px;
+}
+
 /* Main Page */
 .main-page{
     margin-top:5%;
+    margin-right:0px;
 }
 .main-page .col{
     text-align: center;
@@ -181,7 +194,6 @@
 
 .big-div{
     margin:5% 10% 10% 10%;
-    
     color:var(--text-color);
     width: 80%
 }
