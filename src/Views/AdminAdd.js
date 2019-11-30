@@ -11,7 +11,7 @@ function AP(){
             obj[value] = $('#'+value).val();
         })
         console.log({"O":obj});
-        var res = await fetch('http://localhost:4000/a/c', {
+        var res = await fetch('http://192.168.1.13:4000/poems/add', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

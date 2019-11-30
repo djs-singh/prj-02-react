@@ -2,7 +2,7 @@ import React from 'react';
 import {Navbar, Nav} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons'
-import { faAlignCenter } from '@fortawesome/free-solid-svg-icons'
+import { faAlignCenter, faScroll } from '@fortawesome/free-solid-svg-icons'
 
 function N(){
     let siteName = " कोरा कागज ";

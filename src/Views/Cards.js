@@ -6,11 +6,11 @@ import $ from 'jquery';
 
 
 function C(props){
-    // console.log(props.number)
+    console.log(props.poem)
     let i = parseInt(props.number) % 6;
     let stArray = ['card-styles1','card-styles6','card-styles5','card-styles4','card-styles2','card-styles3']
     var st = stArray[i] + " card-common-style";
-    var link = "/poems/"+props.poem.id;
+    var link = "/poems/"+props.poem.poem_id;
     
     const [visible , setVisible] = useState(props.Fp);
     const [clicked ,setClicked] = useState(false);
@@ -36,10 +36,10 @@ function C(props){
                 overlay={<Alert variant = "dark" className= "readMore">Read More...</Alert>}
                 >
                 <Card className = {st} onClick={onCard}>
-                    <Card.Header style={{'textAlign':'center'}}>{props.poem.title}</Card.Header>
+                    <Card.Header style={{'textAlign':'center'}}>{props.poem.poem_title}</Card.Header>
                     <Card.Body>
-                        <Card.Text> 
-                            {props.poem.preview}
+                        <Card.Text style={{'whiteSpace':'pre-line'}}> 
+                            {props.poem.poem_preview}
                         </Card.Text>
                     </Card.Body>   
                 </Card>    
@@ -61,7 +61,7 @@ function CountCards(){
 
     var fetchItems = async ()=>{
         $('#loading-spinner').removeClass('hide');
-        var data = await fetch('http://localhost:4000/a/b', {
+        var data = await fetch('http://192.168.1.13:4000/poems/get', {
             method: 'GET',
         })
         .then(res => {
