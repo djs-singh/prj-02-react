@@ -1,68 +1,56 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**How do we forecast? ![](![001](https://user-images.githubusercontent.com/46212095/151711125-69430ca8-61c6-416c-917f-3b997577e4fd.png)
+)**
 
-## Available Scripts
+![](![002](https://user-images.githubusercontent.com/46212095/151711136-14264a3b-a470-4ece-b34b-ce82e24602a9.jpeg)
+)
 
-In the project directory, you can run:
+Weather  Forecasting 
 
-### `npm start`
+*Satellite Image of a Storm ![](![003](https://user-images.githubusercontent.com/46212095/151711146-b761f6a7-7aec-4e79-87c6-46bec19ef4c2.jpeg)
+)![](![004](https://user-images.githubusercontent.com/46212095/151711154-679a29f7-997c-4637-8e61-4ef10b1553d6.jpeg)
+)*
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![](![005](https://user-images.githubusercontent.com/46212095/151711161-354d29c0-1c04-48c6-841b-1faa7766c012.png)
+)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Epidemic Model 
 
-### `npm test`
+![](![006](https://user-images.githubusercontent.com/46212095/151711172-894cd510-66b9-4ada-8585-daad3567a7d2.png)
+)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+*S-I-R model* 
 
-### `npm run build`
+![](![007](https://user-images.githubusercontent.com/46212095/151711179-28f15d38-61d3-4f37-bae8-1c6938602c93.jpeg))
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+*“Flattening the curve”* 
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+![](![008](https://user-images.githubusercontent.com/46212095/151711185-99927905-5d03-4611-9353-be2c9ffb7f2a.png))
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+*Time t and differential equations Other considerations* 
 
-### `npm run eject`
+- *Births and natural deaths*
+- *Immunity and vaccination* 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![](![009](https://user-images.githubusercontent.com/46212095/151711189-cdf5733d-731b-4419-b542-05d693f2fef6.jpeg)
+)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Stock Prices 
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![](![010](https://user-images.githubusercontent.com/46212095/151711197-09f755aa-d054-435b-af5f-5841689c36ec.jpeg)
+)![](![011](https://user-images.githubusercontent.com/46212095/151711199-653a68cd-8bdd-461b-97b6-9a2107ab74f6.jpeg))
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+*“Predictability is absent in the short run …                               but there is predictability in the long run”*
 
-## Learn More
+*Efficient markets                                   to                                  Behavioral finance*                      
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![](![012](https://user-images.githubusercontent.com/46212095/151711210-667a5850-ac9b-4845-b006-77b40ee966fe.jpeg))
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+From seconds   ![](![013](https://user-images.githubusercontent.com/46212095/151711219-1375bf42-9756-4e53-97a2-7e37551197b2.jpeg))
 
-### Code Splitting
+*Algorithmic trading*
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+To centuries   ![](![014](https://user-images.githubusercontent.com/46212095/151711224-d80db576-e768-4fd8-b66a-316c48fef620.jpeg))
 
-### Analyzing the Bundle Size
+*Climate change* 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+**Thank you![](![001](https://user-images.githubusercontent.com/46212095/151711240-0ef1c56f-f9ad-4118-8b11-965d473caf6b.png))![](![015](https://user-images.githubusercontent.com/46212095/151711234-e10398e8-1740-4f69-973f-46bc9820dfb5.png))**
